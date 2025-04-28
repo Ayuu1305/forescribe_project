@@ -3,7 +3,6 @@
 import Link from "next/link";
 import Image from "next/image";
 import { motion, AnimatePresence } from "framer-motion";
-import { Poppins } from "next/font/google";
 import { useEffect, useState } from "react";
 import { MoonIcon, SunIcon } from "@heroicons/react/24/solid";
 
