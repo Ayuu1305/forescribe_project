@@ -9,17 +9,14 @@ import { MoonIcon, SunIcon } from "@heroicons/react/24/solid";
 
 // Icons
 import {
-  FaReact,
   FaLinkedin,
   FaCommentDots,
-  FaUserTie,
   FaMoneyBillWave,
   FaMailchimp,
-  FaQuestionCircle,
   FaSkype,
-  FaAws,
   FaBolt,
   FaPaintBrush,
+  FaAws,
 } from "react-icons/fa";
 import { SiQuickbooks, SiNotion } from "react-icons/si";
 
@@ -286,7 +283,7 @@ interface CardProps {
     type: string;
     title: string;
     description: string;
-    Icon?: any;
+    Icon?: React.ElementType;
     iconAreaBg?: string;
     iconColor?: string;
     imageUrl?: string;

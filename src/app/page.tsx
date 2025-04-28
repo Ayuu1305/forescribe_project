@@ -1,7 +1,5 @@
 "use client"; // Mark as client component for framer-motion
 
-import Image from "next/image";
-import { GeistSans } from "geist/font/sans";
 import { Poppins } from "next/font/google"; // Import Poppins
 import { FaGoogle, FaMicrosoft } from "react-icons/fa";
 import { motion } from "framer-motion"; // Import motion
@@ -131,26 +129,25 @@ export default function Home() {
             </motion.button>
           </div>
 
-          {/* Terms Text is REMOVED from here */}
+          {/* Terms Text - Moved BELOW the card - Apply Poppins font and Figma styles */}
+          <p
+            className={`relative z-20 mt-6 max-w-md text-center text-[13px] leading-[21px] font-normal text-neutral-300 ${poppins.className}`}
+          >
+            {" "}
+            {/* Apply Poppins class and styles */}
+            By clicking &quot;Continue with Google/Microsoft&quot; above, you
+            acknowledge that you have read and understood, and agree to
+            forescribe&apos;s{" "}
+            <a href="#" className="underline hover:text-white">
+              Terms &amp; Conditions
+            </a>{" "}
+            and{" "}
+            <a href="#" className="underline hover:text-white">
+              Privacy Policy
+            </a>
+            .
+          </p>
         </motion.div>
-
-        {/* Terms Text - Moved BELOW the card - Apply Poppins font and Figma styles */}
-        <p
-          className={`relative z-20 mt-6 max-w-md text-center text-[13px] leading-[21px] font-normal text-neutral-300 ${poppins.className}`}
-        >
-          {" "}
-          {/* Apply Poppins class and styles */}
-          By clicking "Continue with Google/Microsoft" above, you acknowledge
-          that you have read and understood, and agree to forescribe's{" "}
-          <a href="#" className="underline hover:text-white">
-            Terms & Conditions
-          </a>{" "}
-          and{" "}
-          <a href="#" className="underline hover:text-white">
-            Privacy Policy
-          </a>
-          .
-        </p>
 
         {/* Temporary Link to Dashboard */}
         <div className="relative z-20 mt-8">
