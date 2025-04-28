@@ -20,12 +20,6 @@ import {
 } from "react-icons/fa";
 import { SiQuickbooks, SiNotion } from "react-icons/si";
 
-const poppins = Poppins({
-  weight: ["400", "500", "600"],
-  subsets: ["latin"],
-  display: "swap",
-});
-
 // Data for the dashboard cards - exact match to the Figma design with 4-3-4-3-4 pattern
 const dashboardCardsData = [
   // Row 1 - 4 cards
